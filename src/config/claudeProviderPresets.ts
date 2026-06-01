@@ -90,7 +90,44 @@ export const providerPresets: ProviderPreset[] = [
     iconColor: "#D4915D",
   },
   {
+    name: "Xiaomi MiMo",
+    websiteUrl: "https://platform.xiaomimimo.com",
+    apiKeyUrl: "https://platform.xiaomimimo.com/#/console/api-keys",
+    settingsConfig: {
+      env: {
+        ANTHROPIC_BASE_URL: "https://api.xiaomimimo.com/anthropic",
+        ANTHROPIC_AUTH_TOKEN: "",
+        ANTHROPIC_MODEL: "mimo-v2.5-pro",
+        ANTHROPIC_DEFAULT_HAIKU_MODEL: "mimo-v2.5-pro",
+        ANTHROPIC_DEFAULT_SONNET_MODEL: "mimo-v2.5-pro",
+        ANTHROPIC_DEFAULT_OPUS_MODEL: "mimo-v2.5-pro",
+      },
+    },
+    category: "cn_official",
+    icon: "xiaomimimo",
+    iconColor: "#000000",
+  },
+  {
+    name: "Xiaomi MiMo Token Plan (China)",
+    websiteUrl: "https://platform.xiaomimimo.com/#/token-plan",
+    apiKeyUrl: "https://platform.xiaomimimo.com/#/console/plan-manage",
+    settingsConfig: {
+      env: {
+        ANTHROPIC_BASE_URL: "https://token-plan-cn.xiaomimimo.com/anthropic",
+        ANTHROPIC_AUTH_TOKEN: "",
+        ANTHROPIC_MODEL: "mimo-v2.5-pro",
+        ANTHROPIC_DEFAULT_HAIKU_MODEL: "mimo-v2.5-pro",
+        ANTHROPIC_DEFAULT_SONNET_MODEL: "mimo-v2.5-pro",
+        ANTHROPIC_DEFAULT_OPUS_MODEL: "mimo-v2.5-pro",
+      },
+    },
+    category: "cn_official",
+    icon: "xiaomimimo",
+    iconColor: "#000000",
+  },
+  {
     name: "Shengsuanyun",
+    hidden: true,
     nameKey: "providerForm.presets.shengsuanyun",
     websiteUrl: "https://www.shengsuanyun.com/?from=CH_4HHXMRYF",
     apiKeyUrl: "https://www.shengsuanyun.com/?from=CH_4HHXMRYF",
@@ -111,6 +148,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "PatewayAI",
+    hidden: true,
     websiteUrl: "https://pateway.ai",
     apiKeyUrl: "https://pateway.ai/?ch=etzpm8&aff=WB6M6F67#/",
     apiKeyField: "ANTHROPIC_API_KEY",
@@ -235,6 +273,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "OpenCode Go",
+    hidden: true,
     websiteUrl: "https://opencode.ai",
     settingsConfig: {
       env: {
@@ -405,6 +444,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "ModelScope",
+    hidden: true,
     websiteUrl: "https://modelscope.cn",
     settingsConfig: {
       env: {
@@ -422,6 +462,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "KAT-Coder",
+    hidden: true,
     websiteUrl: "https://console.streamlake.ai",
     apiKeyUrl: "https://console.streamlake.ai/console/api-key",
     settingsConfig: {
@@ -448,6 +489,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "Longcat",
+    hidden: true,
     websiteUrl: "https://longcat.chat/platform",
     apiKeyUrl: "https://longcat.chat/platform/api_keys",
     settingsConfig: {
@@ -535,6 +577,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "AiHubMix",
+    hidden: true,
     websiteUrl: "https://aihubmix.com",
     apiKeyUrl: "https://aihubmix.com",
     // 说明：该供应商使用 ANTHROPIC_API_KEY（而非 ANTHROPIC_AUTH_TOKEN）
@@ -553,6 +596,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "SiliconFlow",
+    hidden: true,
     websiteUrl: "https://siliconflow.cn",
     apiKeyUrl: "https://cloud.siliconflow.cn/i/drGuwc9k",
     settingsConfig: {
@@ -573,6 +617,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "SiliconFlow en",
+    hidden: true,
     websiteUrl: "https://siliconflow.com",
     apiKeyUrl: "https://cloud.siliconflow.cn/i/drGuwc9k",
     settingsConfig: {
@@ -593,6 +638,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "DMXAPI",
+    hidden: true,
     websiteUrl: "https://www.dmxapi.cn",
     apiKeyUrl: "https://www.dmxapi.cn",
     settingsConfig: {
@@ -609,6 +655,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "PackyCode",
+    hidden: true,
     websiteUrl: "https://www.packyapi.com",
     apiKeyUrl: "https://www.packyapi.com/register?aff=cc-switch",
     settingsConfig: {
@@ -629,6 +676,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "APIKEY.FUN",
+    hidden: true,
     websiteUrl: "https://apikey.fun",
     apiKeyUrl: "https://apikey.fun/register?aff=CCSwitch",
     settingsConfig: {
@@ -646,6 +694,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "APINebula",
+    hidden: true,
     websiteUrl: "https://apinebula.com",
     apiKeyUrl: "https://apinebula.com/02rw5X",
     settingsConfig: {
@@ -663,6 +712,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "AtlasCloud",
+    hidden: true,
     websiteUrl: "https://www.atlascloud.ai/console/coding-plan",
     apiKeyUrl: "https://www.atlascloud.ai/console/coding-plan",
     settingsConfig: {
@@ -684,6 +734,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "SudoCode",
+    hidden: true,
     websiteUrl: "https://sudocode.us",
     apiKeyUrl: "https://sudocode.us",
     settingsConfig: {
@@ -701,6 +752,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "ClaudeAPI",
+    hidden: true,
     websiteUrl: "https://claudeapi.com",
     apiKeyUrl: "https://console.claudeapi.com/register?aff=pCLD",
     settingsConfig: {
@@ -716,6 +768,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "ClaudeCN",
+    hidden: true,
     websiteUrl: "https://claudecn.top",
     apiKeyUrl: "https://claudecn.top/register?aff=ccswitch",
     settingsConfig: {
@@ -731,6 +784,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "RunAPI",
+    hidden: true,
     websiteUrl: "https://runapi.co",
     apiKeyUrl: "https://runapi.co",
     settingsConfig: {
@@ -746,6 +800,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "RelaxyCode",
+    hidden: true,
     websiteUrl: "https://www.relaxycode.com",
     apiKeyUrl: "https://www.relaxycode.com/register",
     settingsConfig: {
@@ -759,6 +814,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "Cubence",
+    hidden: true,
     websiteUrl: "https://cubence.com",
     apiKeyUrl: "https://cubence.com/signup?code=CCSWITCH&source=ccs",
     settingsConfig: {
@@ -781,6 +837,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "AIGoCode",
+    hidden: true,
     websiteUrl: "https://aigocode.com",
     apiKeyUrl: "https://aigocode.com/invite/CC-SWITCH",
     settingsConfig: {
@@ -799,6 +856,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "RightCode",
+    hidden: true,
     websiteUrl: "https://www.right.codes",
     apiKeyUrl: "https://www.right.codes/register?aff=CCSWITCH",
     settingsConfig: {
@@ -815,6 +873,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "AICodeMirror",
+    hidden: true,
     websiteUrl: "https://www.aicodemirror.com",
     apiKeyUrl: "https://www.aicodemirror.com/register?invitecode=9915W3",
     settingsConfig: {
@@ -835,6 +894,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "CrazyRouter",
+    hidden: true,
     websiteUrl: "https://www.crazyrouter.com",
     apiKeyUrl: "https://www.crazyrouter.com/register?aff=OZcm&ref=cc-switch",
     settingsConfig: {
@@ -852,6 +912,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "SSSAiCode",
+    hidden: true,
     websiteUrl: "https://www.sssaicode.com",
     apiKeyUrl: "https://www.sssaicode.com/register?ref=DCP0SM",
     settingsConfig: {
@@ -873,6 +934,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "Compshare",
+    hidden: true,
     nameKey: "providerForm.presets.ucloud",
     websiteUrl: "https://www.compshare.cn",
     apiKeyUrl:
@@ -892,6 +954,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "Compshare Coding Plan",
+    hidden: true,
     nameKey: "providerForm.presets.ucloudCoding",
     websiteUrl: "https://www.compshare.cn",
     apiKeyUrl:
@@ -911,6 +974,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "Micu",
+    hidden: true,
     websiteUrl: "https://www.micuapi.ai",
     apiKeyUrl: "https://www.micuapi.ai/register?aff=aOYQ",
     settingsConfig: {
@@ -928,6 +992,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "CTok.ai",
+    hidden: true,
     websiteUrl: "https://ctok.ai",
     apiKeyUrl: "https://ctok.ai",
     settingsConfig: {
@@ -944,6 +1009,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "E-FlowCode",
+    hidden: true,
     websiteUrl: "https://e-flowcode.cc",
     apiKeyUrl: "https://e-flowcode.cc",
     settingsConfig: {
@@ -984,6 +1050,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "TheRouter",
+    hidden: true,
     websiteUrl: "https://therouter.ai",
     apiKeyUrl: "https://dashboard.therouter.ai",
     settingsConfig: {
@@ -1002,6 +1069,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "Novita AI",
+    hidden: true,
     websiteUrl: "https://novita.ai",
     apiKeyUrl: "https://novita.ai",
     settingsConfig: {
@@ -1061,6 +1129,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "LemonData",
+    hidden: true,
     websiteUrl: "https://lemondata.cc",
     apiKeyUrl: "https://lemondata.cc/r/FFX1ZDUP",
     apiKeyField: "ANTHROPIC_API_KEY",
@@ -1096,6 +1165,7 @@ export const providerPresets: ProviderPreset[] = [
   },
   {
     name: "PIPELLM",
+    hidden: true,
     websiteUrl: "https://code.pipellm.ai",
     apiKeyUrl: "https://code.pipellm.ai/login?ref=uvw650za",
     settingsConfig: {
@@ -1111,42 +1181,6 @@ export const providerPresets: ProviderPreset[] = [
     },
     category: "aggregator",
     icon: "pipellm",
-  },
-  {
-    name: "Xiaomi MiMo",
-    websiteUrl: "https://platform.xiaomimimo.com",
-    apiKeyUrl: "https://platform.xiaomimimo.com/#/console/api-keys",
-    settingsConfig: {
-      env: {
-        ANTHROPIC_BASE_URL: "https://api.xiaomimimo.com/anthropic",
-        ANTHROPIC_AUTH_TOKEN: "",
-        ANTHROPIC_MODEL: "mimo-v2.5-pro",
-        ANTHROPIC_DEFAULT_HAIKU_MODEL: "mimo-v2.5-pro",
-        ANTHROPIC_DEFAULT_SONNET_MODEL: "mimo-v2.5-pro",
-        ANTHROPIC_DEFAULT_OPUS_MODEL: "mimo-v2.5-pro",
-      },
-    },
-    category: "cn_official",
-    icon: "xiaomimimo",
-    iconColor: "#000000",
-  },
-  {
-    name: "Xiaomi MiMo Token Plan (China)",
-    websiteUrl: "https://platform.xiaomimimo.com/#/token-plan",
-    apiKeyUrl: "https://platform.xiaomimimo.com/#/console/plan-manage",
-    settingsConfig: {
-      env: {
-        ANTHROPIC_BASE_URL: "https://token-plan-cn.xiaomimimo.com/anthropic",
-        ANTHROPIC_AUTH_TOKEN: "",
-        ANTHROPIC_MODEL: "mimo-v2.5-pro",
-        ANTHROPIC_DEFAULT_HAIKU_MODEL: "mimo-v2.5-pro",
-        ANTHROPIC_DEFAULT_SONNET_MODEL: "mimo-v2.5-pro",
-        ANTHROPIC_DEFAULT_OPUS_MODEL: "mimo-v2.5-pro",
-      },
-    },
-    category: "cn_official",
-    icon: "xiaomimimo",
-    iconColor: "#000000",
   },
   {
     name: "AWS Bedrock (AKSK)",

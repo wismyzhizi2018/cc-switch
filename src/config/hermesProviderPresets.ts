@@ -113,6 +113,8 @@ export interface HermesProviderPreset {
   isCustomTemplate?: boolean;
   /** Optional top-level `model:` defaults written on switch. */
   suggestedDefaults?: HermesSuggestedDefaults;
+  // 是否在 UI 中隐藏该预设
+  hidden?: boolean;
 }
 
 export interface HermesProviderSettingsConfig {
@@ -130,6 +132,7 @@ export interface HermesProviderSettingsConfig {
 export const hermesProviderPresets: HermesProviderPreset[] = [
   {
     name: "Shengsuanyun",
+    hidden: true,
     nameKey: "providerForm.presets.shengsuanyun",
     websiteUrl: "https://www.shengsuanyun.com/?from=CH_4HHXMRYF",
     apiKeyUrl: "https://www.shengsuanyun.com/?from=CH_4HHXMRYF",
@@ -517,6 +520,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "ModelScope",
+    hidden: true,
     websiteUrl: "https://modelscope.cn",
     settingsConfig: {
       name: "modelscope",
@@ -534,6 +538,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "KAT-Coder",
+    hidden: true,
     websiteUrl: "https://console.streamlake.ai",
     apiKeyUrl: "https://console.streamlake.ai/console/api-key",
     settingsConfig: {
@@ -563,6 +568,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "Longcat",
+    hidden: true,
     websiteUrl: "https://longcat.chat/platform",
     apiKeyUrl: "https://longcat.chat/platform/api_keys",
     settingsConfig: {
@@ -638,6 +644,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "AiHubMix",
+    hidden: true,
     websiteUrl: "https://aihubmix.com",
     apiKeyUrl: "https://aihubmix.com",
     settingsConfig: {
@@ -656,6 +663,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "SiliconFlow",
+    hidden: true,
     websiteUrl: "https://siliconflow.cn",
     apiKeyUrl: "https://cloud.siliconflow.cn/i/drGuwc9k",
     settingsConfig: {
@@ -684,6 +692,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "SiliconFlow en",
+    hidden: true,
     websiteUrl: "https://siliconflow.com",
     apiKeyUrl: "https://cloud.siliconflow.cn/i/drGuwc9k",
     settingsConfig: {
@@ -707,6 +716,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "DMXAPI",
+    hidden: true,
     websiteUrl: "https://www.dmxapi.cn",
     apiKeyUrl: "https://www.dmxapi.cn",
     settingsConfig: {
@@ -725,6 +735,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "PackyCode",
+    hidden: true,
     websiteUrl: "https://www.packyapi.com",
     apiKeyUrl: "https://www.packyapi.com/register?aff=cc-switch",
     settingsConfig: {
@@ -748,6 +759,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "APIKEY.FUN",
+    hidden: true,
     websiteUrl: "https://apikey.fun",
     apiKeyUrl: "https://apikey.fun/register?aff=CCSwitch",
     settingsConfig: {
@@ -783,6 +795,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "APINebula",
+    hidden: true,
     websiteUrl: "https://apinebula.com",
     apiKeyUrl: "https://apinebula.com/02rw5X",
     settingsConfig: {
@@ -807,6 +820,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "AtlasCloud",
+    hidden: true,
     websiteUrl: "https://www.atlascloud.ai/console/coding-plan",
     apiKeyUrl: "https://www.atlascloud.ai/console/coding-plan",
     settingsConfig: {
@@ -831,6 +845,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "SudoCode",
+    hidden: true,
     websiteUrl: "https://sudocode.us",
     apiKeyUrl: "https://sudocode.us",
     settingsConfig: {
@@ -855,6 +870,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "Cubence",
+    hidden: true,
     websiteUrl: "https://cubence.com",
     apiKeyUrl: "https://cubence.com/signup?code=CCSWITCH&source=ccs",
     settingsConfig: {
@@ -879,6 +895,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "ClaudeCN",
+    hidden: true,
     websiteUrl: "https://claudecn.top",
     apiKeyUrl: "https://claudecn.top/register?aff=ccswitch",
     settingsConfig: {
@@ -909,6 +926,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "RunAPI",
+    hidden: true,
     websiteUrl: "https://runapi.co",
     apiKeyUrl: "https://runapi.co",
     settingsConfig: {
@@ -939,6 +957,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "AIGoCode",
+    hidden: true,
     websiteUrl: "https://aigocode.com",
     apiKeyUrl: "https://aigocode.com/invite/CC-SWITCH",
     settingsConfig: {
@@ -963,6 +982,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "RightCode",
+    hidden: true,
     websiteUrl: "https://www.right.codes",
     apiKeyUrl: "https://www.right.codes/register?aff=CCSWITCH",
     settingsConfig: {
@@ -987,6 +1007,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "AICodeMirror",
+    hidden: true,
     websiteUrl: "https://www.aicodemirror.com",
     apiKeyUrl: "https://www.aicodemirror.com/register?invitecode=9915W3",
     settingsConfig: {
@@ -1011,6 +1032,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "CrazyRouter",
+    hidden: true,
     websiteUrl: "https://www.crazyrouter.com",
     apiKeyUrl: "https://www.crazyrouter.com/register?aff=OZcm&ref=cc-switch",
     settingsConfig: {
@@ -1035,6 +1057,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "SSSAiCode",
+    hidden: true,
     websiteUrl: "https://www.sssaicode.com",
     apiKeyUrl: "https://www.sssaicode.com/register?ref=DCP0SM",
     settingsConfig: {
@@ -1059,6 +1082,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "Compshare",
+    hidden: true,
     nameKey: "providerForm.presets.ucloud",
     websiteUrl: "https://www.compshare.cn",
     apiKeyUrl:
@@ -1081,6 +1105,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "Compshare Coding Plan",
+    hidden: true,
     nameKey: "providerForm.presets.ucloudCoding",
     websiteUrl: "https://www.compshare.cn",
     apiKeyUrl:
@@ -1103,6 +1128,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "Micu",
+    hidden: true,
     websiteUrl: "https://www.micuapi.ai",
     apiKeyUrl: "https://www.micuapi.ai/register?aff=aOYQ",
     settingsConfig: {
@@ -1127,6 +1153,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "CTok.ai",
+    hidden: true,
     websiteUrl: "https://ctok.ai",
     apiKeyUrl: "https://ctok.ai",
     settingsConfig: {
@@ -1151,6 +1178,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "E-FlowCode",
+    hidden: true,
     websiteUrl: "https://e-flowcode.cc",
     apiKeyUrl: "https://e-flowcode.cc",
     settingsConfig: {
@@ -1173,6 +1201,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "LemonData",
+    hidden: true,
     websiteUrl: "https://lemondata.cc",
     apiKeyUrl: "https://lemondata.cc/r/FFX1ZDUP",
     settingsConfig: {
@@ -1192,6 +1221,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "TheRouter",
+    hidden: true,
     websiteUrl: "https://therouter.ai",
     apiKeyUrl: "https://dashboard.therouter.ai",
     settingsConfig: {
@@ -1215,6 +1245,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "Novita AI",
+    hidden: true,
     websiteUrl: "https://novita.ai",
     apiKeyUrl: "https://novita.ai",
     settingsConfig: {
@@ -1251,6 +1282,7 @@ export const hermesProviderPresets: HermesProviderPreset[] = [
   },
   {
     name: "PIPELLM",
+    hidden: true,
     websiteUrl: "https://code.pipellm.ai",
     apiKeyUrl: "https://code.pipellm.ai/login?ref=uvw650za",
     settingsConfig: {

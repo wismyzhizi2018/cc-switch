@@ -16,6 +16,8 @@ export interface OpenCodeProviderPreset {
   icon?: string;
   iconColor?: string;
   isCustomTemplate?: boolean;
+  // 是否在 UI 中隐藏该预设
+  hidden?: boolean;
 }
 
 export const opencodeNpmPackages = [
@@ -307,6 +309,7 @@ export const opencodeProviderPresets: OpenCodeProviderPreset[] = [
         editorValue: "",
       },
     },
+hidden: true,
   },
   {
     name: "火山Agentplan",
@@ -723,6 +726,7 @@ export const opencodeProviderPresets: OpenCodeProviderPreset[] = [
         editorValue: "",
       },
     },
+hidden: true,
   },
   {
     name: "KAT-Coder",
@@ -764,6 +768,7 @@ export const opencodeProviderPresets: OpenCodeProviderPreset[] = [
       },
     },
     icon: "catcoder",
+hidden: true,
   },
   {
     name: "Longcat",
@@ -797,6 +802,7 @@ export const opencodeProviderPresets: OpenCodeProviderPreset[] = [
         editorValue: "",
       },
     },
+hidden: true,
   },
   {
     name: "MiniMax",
@@ -988,6 +994,7 @@ export const opencodeProviderPresets: OpenCodeProviderPreset[] = [
         editorValue: "",
       },
     },
+hidden: true,
   },
   {
     name: "DMXAPI",
@@ -1016,6 +1023,7 @@ export const opencodeProviderPresets: OpenCodeProviderPreset[] = [
         editorValue: "",
       },
     },
+hidden: true,
   },
   {
     name: "OpenRouter",
@@ -1075,6 +1083,7 @@ export const opencodeProviderPresets: OpenCodeProviderPreset[] = [
         editorValue: "",
       },
     },
+hidden: true,
   },
   {
     name: "Novita AI",
@@ -1102,6 +1111,7 @@ export const opencodeProviderPresets: OpenCodeProviderPreset[] = [
         editorValue: "",
       },
     },
+hidden: true,
   },
   {
     name: "Nvidia",
@@ -1157,6 +1167,7 @@ export const opencodeProviderPresets: OpenCodeProviderPreset[] = [
         editorValue: "",
       },
     },
+hidden: true,
   },
 
   {
@@ -1187,6 +1198,7 @@ export const opencodeProviderPresets: OpenCodeProviderPreset[] = [
         editorValue: "",
       },
     },
+hidden: true,
   },
   {
     name: "APIKEY.FUN",
@@ -1217,6 +1229,7 @@ export const opencodeProviderPresets: OpenCodeProviderPreset[] = [
         editorValue: "",
       },
     },
+hidden: true,
   },
   {
     name: "APINebula",
@@ -1245,6 +1258,7 @@ export const opencodeProviderPresets: OpenCodeProviderPreset[] = [
         editorValue: "",
       },
     },
+hidden: true,
   },
   {
     name: "AtlasCloud",
@@ -1273,6 +1287,7 @@ export const opencodeProviderPresets: OpenCodeProviderPreset[] = [
         editorValue: "",
       },
     },
+hidden: true,
   },
   {
     name: "SudoCode",
@@ -1301,6 +1316,7 @@ export const opencodeProviderPresets: OpenCodeProviderPreset[] = [
         editorValue: "",
       },
     },
+hidden: true,
   },
   {
     name: "Cubence",
@@ -1331,6 +1347,7 @@ export const opencodeProviderPresets: OpenCodeProviderPreset[] = [
         editorValue: "",
       },
     },
+hidden: true,
   },
   {
     name: "AIGoCode",
@@ -1361,6 +1378,7 @@ export const opencodeProviderPresets: OpenCodeProviderPreset[] = [
         editorValue: "",
       },
     },
+hidden: true,
   },
   {
     name: "RightCode",
@@ -1390,6 +1408,7 @@ export const opencodeProviderPresets: OpenCodeProviderPreset[] = [
         editorValue: "",
       },
     },
+hidden: true,
   },
   {
     name: "AICodeMirror",
@@ -1420,6 +1439,7 @@ export const opencodeProviderPresets: OpenCodeProviderPreset[] = [
         editorValue: "",
       },
     },
+hidden: true,
   },
   {
     name: "ClaudeCN",
@@ -1450,6 +1470,7 @@ export const opencodeProviderPresets: OpenCodeProviderPreset[] = [
         editorValue: "",
       },
     },
+hidden: true,
   },
   {
     name: "RunAPI",
@@ -1480,6 +1501,7 @@ export const opencodeProviderPresets: OpenCodeProviderPreset[] = [
         editorValue: "",
       },
     },
+hidden: true,
   },
   {
     name: "CrazyRouter",
@@ -1510,6 +1532,7 @@ export const opencodeProviderPresets: OpenCodeProviderPreset[] = [
         editorValue: "",
       },
     },
+hidden: true,
   },
   {
     name: "SSSAiCode",
@@ -1540,6 +1563,7 @@ export const opencodeProviderPresets: OpenCodeProviderPreset[] = [
         editorValue: "",
       },
     },
+hidden: true,
   },
   {
     name: "Micu",
@@ -1570,6 +1594,7 @@ export const opencodeProviderPresets: OpenCodeProviderPreset[] = [
         editorValue: "",
       },
     },
+hidden: true,
   },
   {
     name: "CTok.ai",
@@ -1600,6 +1625,7 @@ export const opencodeProviderPresets: OpenCodeProviderPreset[] = [
         editorValue: "",
       },
     },
+hidden: true,
   },
   {
     name: "E-FlowCode",
@@ -1630,6 +1656,7 @@ export const opencodeProviderPresets: OpenCodeProviderPreset[] = [
         editorValue: "",
       },
     },
+hidden: true,
   },
   {
     name: "LemonData",
@@ -1658,6 +1685,7 @@ export const opencodeProviderPresets: OpenCodeProviderPreset[] = [
         editorValue: "",
       },
     },
+hidden: true,
   },
   {
     name: "AWS Bedrock",

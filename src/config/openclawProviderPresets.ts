@@ -40,6 +40,8 @@ export interface OpenClawProviderPreset {
   isCustomTemplate?: boolean;
   /** Suggested default model configuration */
   suggestedDefaults?: OpenClawSuggestedDefaults;
+  /** 是否在 UI 中隐藏该预设 */
+  hidden?: boolean;
 }
 
 function rebaseOpenClawModelRef(modelRef: string, providerKey: string): string {
@@ -143,6 +145,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
         "shengsuanyun/anthropic/claude-sonnet-4.6": { alias: "Sonnet" },
       },
     },
+hidden: true,
   },
   {
     name: "火山Agentplan",
@@ -701,6 +704,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
       model: { primary: "katcoder/KAT-Coder-Pro" },
       modelCatalog: { "katcoder/KAT-Coder-Pro": { alias: "KAT-Coder" } },
     },
+hidden: true,
   },
   {
     name: "Longcat",
@@ -740,6 +744,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
       model: { primary: "longcat/LongCat-Flash-Chat" },
       modelCatalog: { "longcat/LongCat-Flash-Chat": { alias: "LongCat" } },
     },
+hidden: true,
   },
   {
     name: "BaiLing",
@@ -899,6 +904,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
         "aihubmix/claude-sonnet-4-6": { alias: "Sonnet" },
       },
     },
+hidden: true,
   },
   {
     name: "DMXAPI",
@@ -943,6 +949,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
         "dmxapi/claude-sonnet-4-6": { alias: "Sonnet" },
       },
     },
+hidden: true,
   },
   {
     name: "ClaudeCN",
@@ -991,6 +998,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
         "claudecn/claude-haiku-4-5": { alias: "Haiku" },
       },
     },
+hidden: true,
   },
   {
     name: "RunAPI",
@@ -1039,6 +1047,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
         "runapi/claude-haiku-4-5": { alias: "Haiku" },
       },
     },
+hidden: true,
   },
   {
     name: "OpenRouter",
@@ -1149,6 +1158,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
         "therouter/qwen/qwen3-coder-480b": { alias: "Qwen Coder" },
       },
     },
+hidden: true,
   },
   {
     name: "ModelScope",
@@ -1187,6 +1197,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
       model: { primary: "modelscope/ZhipuAI/GLM-5.1" },
       modelCatalog: { "modelscope/ZhipuAI/GLM-5.1": { alias: "GLM" } },
     },
+hidden: true,
   },
   {
     name: "SiliconFlow",
@@ -1223,6 +1234,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
         "siliconflow/Pro/MiniMaxAI/MiniMax-M2.7": { alias: "MiniMax" },
       },
     },
+hidden: true,
   },
   {
     name: "SiliconFlow en",
@@ -1259,6 +1271,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
         "siliconflow-en/MiniMaxAI/MiniMax-M2.7": { alias: "MiniMax" },
       },
     },
+hidden: true,
   },
   {
     name: "Novita AI",
@@ -1293,6 +1306,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
         "novita/zai-org/glm-5.1": { alias: "GLM-5.1" },
       },
     },
+hidden: true,
   },
   {
     name: "Nvidia",
@@ -1375,6 +1389,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
         "pipellm/claude-haiku-4-5-20251001": { alias: "Haiku" },
       },
     },
+hidden: true,
   },
 
   // ========== Third Party Partners ==========
@@ -1422,6 +1437,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
         "packycode/claude-sonnet-4-6": { alias: "Sonnet" },
       },
     },
+hidden: true,
   },
   {
     name: "APIKEY.FUN",
@@ -1471,6 +1487,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
         "apikeyfun/claude-haiku-4-5": { alias: "Haiku" },
       },
     },
+hidden: true,
   },
   {
     name: "APINebula",
@@ -1503,6 +1520,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
         primary: "apinebula/gpt-5.5",
       },
     },
+hidden: true,
   },
   {
     name: "AtlasCloud",
@@ -1535,6 +1553,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
         primary: "atlascloud/zai-org/glm-5.1",
       },
     },
+hidden: true,
   },
   {
     name: "SudoCode",
@@ -1567,6 +1586,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
         primary: "sudocode/gpt-5.5",
       },
     },
+hidden: true,
   },
   {
     name: "Cubence",
@@ -1613,6 +1633,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
         "cubence/claude-sonnet-4-6": { alias: "Sonnet" },
       },
     },
+hidden: true,
   },
   {
     name: "AIGoCode",
@@ -1659,6 +1680,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
         "aigocode/claude-sonnet-4-6": { alias: "Sonnet" },
       },
     },
+hidden: true,
   },
   {
     name: "RightCode",
@@ -1705,6 +1727,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
         "rightcode/claude-sonnet-4-6": { alias: "Sonnet" },
       },
     },
+hidden: true,
   },
   {
     name: "AICodeMirror",
@@ -1751,6 +1774,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
         "aicodemirror/claude-sonnet-4-6": { alias: "Sonnet" },
       },
     },
+hidden: true,
   },
   {
     name: "CrazyRouter",
@@ -1797,6 +1821,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
         "crazyrouter/claude-sonnet-4-6": { alias: "Sonnet" },
       },
     },
+hidden: true,
   },
   {
     name: "SSSAiCode",
@@ -1843,6 +1868,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
         "sssaicode/claude-sonnet-4-6": { alias: "Sonnet" },
       },
     },
+hidden: true,
   },
   {
     name: "Compshare",
@@ -1883,6 +1909,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
         "compshare/claude-opus-4-8": { alias: "Opus" },
       },
     },
+hidden: true,
   },
   {
     name: "Compshare Coding Plan",
@@ -1923,6 +1950,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
         "compshare-coding/claude-opus-4-8": { alias: "Opus" },
       },
     },
+hidden: true,
   },
   {
     name: "Micu",
@@ -1961,6 +1989,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
         "micu/claude-opus-4-8": { alias: "Opus" },
       },
     },
+hidden: true,
   },
   {
     name: "CTok.ai",
@@ -1999,6 +2028,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
         "ctok/claude-opus-4-8": { alias: "Opus" },
       },
     },
+hidden: true,
   },
   {
     name: "E-FlowCode",
@@ -2061,6 +2091,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
         "eflowcode/gpt-5.2": { alias: "gpt-5.2" },
       },
     },
+hidden: true,
   },
   {
     name: "LemonData",
@@ -2097,6 +2128,7 @@ export const openclawProviderPresets: OpenClawProviderPreset[] = [
         "lemondata/gpt-5.5": { alias: "GPT-5.5" },
       },
     },
+hidden: true,
   },
   // ========== Cloud Providers ==========
   {

@@ -600,27 +600,27 @@ function ProviderFormFull({
 
   const presetEntries = useMemo(() => {
     if (appId === "codex") {
-      return codexProviderPresets.map<PresetEntry>((preset, index) => ({
+      return codexProviderPresets.filter((p) => !p.hidden).map<PresetEntry>((preset, index) => ({
         id: `codex-${index}`,
         preset,
       }));
     } else if (appId === "gemini") {
-      return geminiProviderPresets.map<PresetEntry>((preset, index) => ({
+      return geminiProviderPresets.filter((p) => !p.hidden).map<PresetEntry>((preset, index) => ({
         id: `gemini-${index}`,
         preset,
       }));
     } else if (appId === "opencode") {
-      return opencodeProviderPresets.map<PresetEntry>((preset, index) => ({
+      return opencodeProviderPresets.filter((p) => !p.hidden).map<PresetEntry>((preset, index) => ({
         id: `opencode-${index}`,
         preset,
       }));
     } else if (appId === "openclaw") {
-      return openclawProviderPresets.map<PresetEntry>((preset, index) => ({
+      return openclawProviderPresets.filter((p) => !p.hidden).map<PresetEntry>((preset, index) => ({
         id: `openclaw-${index}`,
         preset,
       }));
     } else if (appId === "hermes") {
-      return hermesProviderPresets.map<PresetEntry>((preset, index) => ({
+      return hermesProviderPresets.filter((p) => !p.hidden).map<PresetEntry>((preset, index) => ({
         id: `hermes-${index}`,
         preset,
       }));

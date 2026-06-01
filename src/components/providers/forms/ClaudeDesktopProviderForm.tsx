@@ -347,7 +347,7 @@ export function ClaudeDesktopProviderForm({
 
   const presetEntries = useMemo<PresetEntry[]>(
     () =>
-      claudeDesktopProviderPresets.map((preset, index) => ({
+      claudeDesktopProviderPresets.filter((p) => !p.hidden).map((preset, index) => ({
         id: `claude-desktop-${index}`,
         preset,
       })),
