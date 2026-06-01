@@ -221,7 +221,11 @@ jobs:
 
       - name: Build Tauri App (Windows)
         if: runner.os == 'Windows'
-        run: pnpm tauri build
+        env:
+          TAURI_SIGNING_PRIVATE_KEY: ""
+        run: |-
+          sed -i 's/"createUpdaterArtifacts": true/"createUpdaterArtifacts": false/' src-tauri/tauri.conf.json
+          pnpm tauri build
 
       - name: Build Tauri App (Linux)
         if: runner.os == 'Linux'
