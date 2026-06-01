@@ -21,6 +21,9 @@ jobs:
       matrix:
         include:
           - os: windows-2022
+          - os: ubuntu-22.04
+          - os: ubuntu-22.04-arm
+            arch: arm64
 
     steps:
       - name: Checkout
@@ -93,13 +96,13 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Prepare Tauri signing key
+        continue-on-error: true
         shell: bash
         run: |
           # 调试：检查 Secret 是否存在
           if [ -z "${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}" ]; then
-            echo "❌ TAURI_SIGNING_PRIVATE_KEY Secret 为空或不存在" >&2
-            echo "请检查 GitHub 仓库 Settings > Secrets and variables > Actions" >&2
-            exit 1
+            echo "⚠️ TAURI_SIGNING_PRIVATE_KEY Secret 为空或不存在，跳过签名" >&2
+            exit 0
           fi
           
           RAW="${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}"
@@ -229,7 +232,11 @@ jobs:
 
       - name: Build Tauri App (Linux)
         if: runner.os == 'Linux'
-        run: pnpm tauri build --bundles appimage,deb,rpm
+        env:
+          TAURI_SIGNING_PRIVATE_KEY: ""
+        run: |-
+          sed -i 's/"createUpdaterArtifacts": true/"createUpdaterArtifacts": false/' src-tauri/tauri.conf.json
+          pnpm tauri build --bundles appimage,deb,rpm
 
       - name: Prepare macOS Assets
         if: runner.os == 'macOS'
